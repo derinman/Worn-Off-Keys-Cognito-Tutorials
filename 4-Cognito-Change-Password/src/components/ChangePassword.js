@@ -11,7 +11,7 @@ export default () => {
     event.preventDefault();
 
     getSession().then(({ user, email }) => {
-      authenticate(email, password).then(() => {
+      authenticate(email, password).then(() => {//更改密碼有這行就不用重新登錄，優化UX
         user.changePassword(password, newPassword, (err, result) => {
           if (err) console.error(err);
           console.log(result);
