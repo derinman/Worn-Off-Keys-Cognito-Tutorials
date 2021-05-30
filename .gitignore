@@ -87,4 +87,4 @@ typings/
 .dynamodb/
 
 # awsConfig
-awsConfig.js
+/*/awsConfig.js
