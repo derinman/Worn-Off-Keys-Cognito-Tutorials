@@ -1,1 +1,2 @@
-const abc;
+const abc = 9;
+
